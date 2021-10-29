@@ -1,0 +1,1 @@
+document.getElementById("current_year").innerHTML+= "<span>"+ new Date().getFullYear()+"&copy;All rights reserved"+ "</span>" 

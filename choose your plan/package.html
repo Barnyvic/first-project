@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="package.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="menu_bar">
+      <img class="nav_logo" src="images/favicon.png" alt="" />
+      RIZ - <span class="company_name">HUB</span>
+
+      <ul>
+        <li><a href="http://127.0.0.1:5501/index.html#">Home</a></li>
+        <li><a href="http://127.0.0.1:5501/aboutus.html">Aboutus </a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Domain</a></li>
+        <li><a href="#">Starthosting</a></li>
+      </ul>
+    </nav>
+    <main class="contact_section">
+      <div class="contact_section_menu">
+        <h2>Contact details</h2>
+        <br />
+        <p class="contact_section_text">
+          For any type of online project please don't hesitate to get in touch
+          with me. The fastest way <br />
+          is to send me your message using the following email
+          <a class="email" href=" barnyvictor@gmail.com">
+            barnyvictor@gmail.com</a
+          >
+        </p>
+        <br />
+        <br />
+        <form
+          action="https://postmail.invotes.com/send"
+          method="post"
+          id="email_form"
+        >
+          <input type="text" name=" subject" placeholder="Subject" /> <br />
+          <br />
+          <input type="text" name=" extra_fullName" placeholder="Full Name" />
+          <br />
+          <br />
+          <input type="text" name=" extra_email" placeholder="E-mail Address" />
+          <br />
+          <br />
+          <textarea
+            class="message"
+            name="text"
+            placeholder="Input Message"
+          ></textarea>
+          <br />
+          <br />
+          <input
+            type="hidden"
+            name="access_token"
+            value="rfwwqt1xnchxirhu3vxu5p7w"
+          />
+          <!-- return urls can be fully qualified -OR-
+                            start with / for root relative -OR-
+                            start with . for url relative -->
+          <input
+            type="hidden"
+            name="success_url"
+            value="https://www.google.com"
+          />
+          <input
+            type="hidden"
+            name="error_url"
+            value="https://www.google.com"
+          />
+
+          <!-- set the reply-to address -->
+          <!-- <input type="text" name="reply_to"
+                                    placeholder="Your Email" /> -->
+
+          <!-- to append extra fields, use the extra_ prefix.
+                            Entries will be appended to your message body. -->
+          <!-- <input type="text" name="extra_phone_number"
+                                    placeholder="Phone Number" /> -->
+
+          <!-- to split your message into 160 chars
+                            for an sms gateway -->
+          <!-- <input type="hidden"
+                                    name="sms_format" value="true" /> -->
+
+          <input id="submit_form" type="submit" value="Send" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="last">
+        <b>Follow us</b> <br />
+        <img src="images/logo.png" alt="logo" />
+      </p>
+      <p class="last">
+        <b>location</b><br />Av-Paulstine <br />Rumudara Port-harcourt
+        <br />Rivers state <br />
+        x_bar@gmail.com
+      </p>
+      <p class="last">
+        <b>Opening time</b> <br />
+        Mon-fri:24h00 <br />Satuday:11h30-02h00 <br />Sunday:11h30-18h00
+      </p>
+      <span id="current_year"></span>
+    </footer>
+    <script src="extra.js"></script>
+  </body>
+</html>
